@@ -326,4 +326,12 @@ div.items{
   font-size: 11px;
   padding: 3px 5px;
 }
+.main-section.other{
+  margin-bottom: 20px;
+}
+.main-section.technical-skills{
+  margin-bottom: 20px;
+}
+
+
 }
