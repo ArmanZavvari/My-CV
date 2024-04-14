@@ -37,7 +37,6 @@
         <div class="social-links">
           <div class="links">
             <a href="https://www.linkedin.com/in/arman-zavvari-b4623b284/"><i class="fa fa-linkedin-square linkedin"></i></a>
-            <a href="https://twitter.com/ArmanZ1999"><i class="fa fa-twitter twitter"></i></a>
             <a href="https://github.com/ArmanZavvari"><i class="fa fa-github github"></i></a>
           </div>
 
@@ -46,7 +45,7 @@
           <div class="items">
             <div class="row">
               <span class="text-sm">Age</span>
-              <span class="font-bold">24</span>
+              <span class="font-bold" id="age"></span>
             </div>
             <div class="row">
               <span class="text-sm">Martial Status</span>
@@ -93,4 +92,12 @@
           </p>
       </section>
     </main>
+    <script>
+      window.onload = function() {
+        var birthYear = 2000;
+        var currentYear = new Date().getFullYear();
+        var age = currentYear - birthYear;
+        document.getElementById('age').innerText = age;
+      }
+    </script>    
   </body>
